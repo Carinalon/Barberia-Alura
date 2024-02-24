@@ -8,18 +8,18 @@ header {
 }
 
 .caja{
-    width: auto;
-    position: static;
+    width: 940px;
+    position: relative;
     margin: 0 auto;
 }
+
 nav{
-    position: static;
+    position: absolute;
     top: 110px;
     right: 0;
-
 }
 
-nav li {
+nav li{
     display: inline;
     margin: 0 0 0 15px;
 }
@@ -37,28 +37,25 @@ nav a:hover{  /* esta propiedad hover captura el movimiento del mouse*/
 }
 
 .productos{
-    width: auto;
+    width: 940px;
     margin: 0 auto;
     padding: 50px;
 }
-.productos li {
+
+.productos li{
     display: inline-block;
     text-align: center;
     width: 30%;
-    vertical-align: top;
-    /*background:#cccccc ;  agregamos el back para poder ver como quedaba cada elemento*/
+    vertical-align: top;    /*background:#cccccc ;  agregamos el back para poder ver como quedaba cada elemento*/
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;/* esto hace que el tamaño se limite al 940 que dimos arriba*/
-    border: 3px solid #000000;  /* ahorro estos 3 lineas border-color: #000000; 
-                                  border-width: 2px; 
-                                  border-style: solid;*/
+    border: 3px solid #000000;  /* ahorro estos 3 lineas border-color: #000000; border-width: 2px; border-style: solid;*/
     border-radius: 12px ;  /* para poner un borde diferente tengo que ponr cada valor por separado*/
 }
 
 .productos li:hover{
     border-color: #c78c19;
-   
 }
 .productos li:active{  /* active lo que hace es activar una accion cuando clikeamos*/
     border-color: #088c19;
@@ -93,9 +90,11 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
-
-/*CONTACTO*/
-
+   /*CONTACTO*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
 form{
     margin: 40px 0;
 }
@@ -109,14 +108,12 @@ form label, form legend{
 .input-padron{
     display: block;
     margin: 0 0 20px;
-    padding: 10px 25px ;
+    padding: 10px 25px;
     width: 50%;
-}
-/*  CSS le da mas valor al ID despues a la clase, y por ultimo a la etiqueta, el inline en HTML es el que mas peso tiene a la hora de jerarquias*/
+}                     /*  CSS le da mas valor al ID despues a la clase, y por ultimo a la etiqueta, el inline en HTML es el que mas peso tiene a la hora de jerarquias*/
 
 .checkbox{
     margin: 20px 0;
-
 }
 
 .enviar{
@@ -130,8 +127,8 @@ form label, form legend{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer; /* pointer hace qu eel cursos se convierta en manito*/
-
 }
+
 .enviar:hover{
     background: darkorange;
     transform: scale(1.2);  /* transform tambien sirve para rotar el elemento*/
@@ -141,11 +138,13 @@ table{
     margin: 40px 40px;
 
 }
+
 thead{
     background: #555555;
     color: white;
     font-weight: bold;
 }
+
 td, th{
     border: 1px solid #000000;
     padding: 10px 15px;
@@ -245,7 +244,7 @@ td, th{
     margin: 1em auto;
 }
 
-@media screen and (max-width:480px){  /*Dentro de esta media query podemos crear un estilo visual que incluye pantallas de hasta 480px. si encuentra una pantalla con esta configuracion aplicaa esos cambios*/
+@media screen and (max-width:480px){  
     h1{
         text-align: center;
     }
